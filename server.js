@@ -8,6 +8,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
+app.use(require("./routes/html-routes"));
+app.use(require("./routes/api-routes"));
+
 // Starts the server to begin listening
 // =============================================================
 app.listen(PORT, function() {
