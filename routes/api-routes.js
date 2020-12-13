@@ -10,7 +10,7 @@ router.post("/api/notes", function(req, res){
 })
 
 router.delete("/api/notes/:id", function(req, res){
-    return res.json(notes + id)
+    return res.json(notes)
 
 })
 
